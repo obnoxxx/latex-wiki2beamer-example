@@ -1,3 +1,6 @@
+<[autotemplate]
+%documentclass={beamer}
+[autotemplate]>
 ==== A simple frame ====
 
 * with a
