@@ -50,3 +50,6 @@ show: pres
 clean:
 	@rm -f $(GENERATED)
 
+.PHONY: all
+
+all: pres
