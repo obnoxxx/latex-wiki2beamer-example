@@ -2,6 +2,7 @@
 SHELL=/bin/sh
 
 SOURCE=pres.wiki
+TEX_SOURCE=pres.tex
 FILES=$(wildcard pres.*)
 
 GENERATED=$(patsubst $(SOURCE),  , $(FILES))
@@ -33,8 +34,12 @@ info:
 .PHONY: pres
 pres: pdf
 .PHONY: pdf
+.PHONY: tex
+tex: $(TEX_SOURCE)
+$(TEX_SOURCE): $(WIKI_SOURCE)
 pdf: clean $(PRES)
-	$(Pzres): $(DEPS)
+
+	$(PRES): $(TEX_SOURCE)
 
 
 .PHONY: clean
