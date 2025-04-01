@@ -1,5 +1,20 @@
 <[autotemplate]
 %documentclass={beamer}
+usepackage=[utf8]{inputenc}
+%usepackage={listings}
+%usepackage={wasysym}
+usepackage={pgf}
+usepackage={multimedia}
+%%%\usepackage{verbatim}
+setbeamercovered={dynamic}
+%setbeamercovered={transparent}
+titleframe=True
+titleframeopts=[plain]
+title=[wiki2beamer demo]{An example wiki2beamer presentation}
+subtitle={a template and example}
+author={Michael Adam / obnoxxx}
+institute={Foo proj/corp}
+date={\today}
 [autotemplate]>
 ==== A simple frame ====
 
