@@ -54,12 +54,11 @@ clean:
 
 all: pres
 
-
 .PHONY: check
-check:check.Makefile
+check:checkmake 
 
-.PHONY: check.Makefile
-check.Makefile:
+.PHONY: checkmake
+checkmake:
 	checkmake Makefile
 
 .PHONY: test
