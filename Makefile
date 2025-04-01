@@ -3,16 +3,16 @@ SHELL=/bin/sh
 
 SOURCE=pres.wiki
 TEX_SOURCE=pres.tex
-FILES=$(wildcard pres.*)
+PRES_FILES=$(wildcard pres.*)
 
-GENERATED=$(patsubst $(SOURCE),  , $(FILES))
+GENERATED=$(patsubst $(SOURCE),  , $(PRES_FILES))
+
 
 
 .SUFFIXES: .tex .pdf .wiki
 
 PRES=pres.pdf
 
-DEPS="$(SOURCE) Makefile"
 
 
 
@@ -48,5 +48,5 @@ show: pres
 
 
 clean:
-	@rm -f $(generated)
+	@rm -f $(GENERATED)
 
