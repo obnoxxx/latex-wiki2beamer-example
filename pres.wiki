@@ -13,7 +13,7 @@ titleframeopts=[plain]
 title=[wiki2beamer demo]{An example wiki2beamer presentation}
 subtitle={a template and example}
 author={Michael Adam / obnoxxx}
-institute={Foo proj/corp}
+institute={Foo proj/Bar corp}
 date={\today}
 [autotemplate]>
 ==== A simple frame ====
@@ -22,4 +22,13 @@ date={\today}
 * bullet list
 *# and two
 *# numbered sub-items
+
+==== Another simple frame ====
+
+Uncovering lists:
+
+*<1> one
+*<2> two
+*<3> three
+*<4> four
 
