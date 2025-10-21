@@ -39,7 +39,7 @@ tex: $(TEX_SOURCE)
 $(TEX_SOURCE): $(WIKI_SOURCE)
 pdf: clean $(PRES)
 
-	$(PRES): $(TEX_SOURCE)
+$(PRES): $(TEX_SOURCE)
 
 
 .PHONY: clean
