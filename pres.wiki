@@ -13,9 +13,13 @@ titleframeopts=[plain]
 title=[wiki2beamer demo]{An example wiki2beamer presentation}
 subtitle={a template and example}
 author={Michael Adam / obnoxxx}
-institute={Foo proj/Bar corp}
+institute={Project /Affiliation}
 date={\today}
 [autotemplate]>
+
+== lists ==
+
+
 ==== A simple frame ====
 
 * with a
@@ -31,4 +35,20 @@ Uncovering lists:
 *<3-> two
 *<4-> three
 *<5> four
+
+== more stuff ==
+
+====text blocks ===
+
+<[block]
+{ An example text block}
+beamer and wiki2beamer offer text blocks
+with nice (colored) frames
+[block]>
+
+
+== wrapping == 
+==== Finale ====
+
+
 
