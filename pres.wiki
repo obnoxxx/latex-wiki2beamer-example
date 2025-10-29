@@ -6,7 +6,7 @@ usepackage=[utf8]{inputenc}
 %usepackage={wasysym}
 usepackage={pgf}
 usepackage={multimedia}
-%%%\usepackage{verbatim}
+usepackage={verbatim}
 setbeamercovered={dynamic}
 %setbeamercovered={transparent}
 titleframe=True
