@@ -1,6 +1,6 @@
 <[autotemplate]
 %documentclass={beamer}
-usetheme={Madrid}
+usetheme={Goettingen}
 usepackage=[utf8]{inputenc}
 %usepackage={listings}
 %usepackage={wasysym}
