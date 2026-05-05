@@ -1,8 +1,10 @@
 
 SHELL=/bin/sh
 
-SOURCE=pres.wiki
-TEX_SOURCE=pres.tex
+BASE := pres
+SOURCE := $(BASE).wiki
+TEX_SOURCE := $(BASE).tex
+TARGET := $(BASE).pdf
 PRES_FILES=$(wildcard pres.*)
 
 GENERATED=$(patsubst $(SOURCE),  , $(PRES_FILES))
@@ -13,6 +15,8 @@ GENERATED=$(patsubst $(SOURCE),  , $(PRES_FILES))
 
 PRES=pres.pdf
 
+
+.DEFAULT_GOAL := all
 
 
 
@@ -29,7 +33,13 @@ PRES=pres.pdf
 .PHONY: info
 
 info:
+		@echo          source: $(SOURCE)
+		@echo          target: $(TARGET)
 		@echo generated files: $(GENERATED)
+
+
+.PHONY: all
+all: pdf
 
 .PHONY: pres
 pres: pdf
