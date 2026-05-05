@@ -8,7 +8,7 @@ This project provides example an example to demonstrate how to create nice-looki
 the [LaTeX](https://www.latex-project.org/) beamer document class. using the wiki2beamer preprocessor
 
 The sorce file https://github.com/obnoxxx/latex-beamer-example/blob/main/pres.wiki has a markdown-like format
-
+nd can be converted to a LaTeX source with the wiki2beamer tool.
 
 
 This project is similar to its companion projects https://github.com/obnoxxx/latex-doc-example for text documents
@@ -18,7 +18,7 @@ and https://github.com/obnoxxx/latex-beamer-example for plain beamer slides.
 ## Building
 
 On a system (e. g. Linux or MacOS) with LaTeX, wiki2beamer, and GNU make installed, the presentation pdf can be created from the
-source file https://github.com/obnoxxx/latex-beamer-example/blob/main/pres.tex  like so:
+source file https://github.com/obnoxxx/latex-beamer-example/blob/main/pres.wiki like so:
 
 ```console
 
@@ -38,9 +38,11 @@ Example:
 
 ```console
 
-$ builbo -l latex -o ubuntu -b -s "make pres"
+$ builbo -l latex -o fedora -b -s "make pres"
 
 ```
+
+
 
 This assumes that the `builbo` cli from the buildbox project is available in the host's `PATH`
 
